@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="crud">
+        <div class="head">
+            <h1>gestion de produit</h1>
+            <h3>ceate,update, delete et search</h3>
+    </div>
+
+
+    <form action="../back-end/create.php" method="post">
+            <div class="inputs">
+                <input  placeholder="Title" type="text" name="title" id="title">
+                <div class="price">
+                    <input type="text" name="price" id="price" placeholder="Price">
+                    <input type="text" name="taxes" id="taxes" placeholder="Taxes">
+                    <input type="text" name="ads" id="ads" placeholder="Ads">
+                    <input type="text" name="discount" id="discount" placeholder="Discount" >
+                </div>
+                <input placeholder="quantite" type="number" name="quantite" id="count">
+                <input placeholder="category" type="text" name="category" id="Category">
+                <button type="submit" id="submit" name="sub">Add Product</button>
+            </div>
+    </form><br><br>
+
+        <button class="affich" onclick="location.href='../front-end/affichage.php'"> Show Products </button>
+
+        <footer>
+            <h5 style="margin: 100px 0;font-family: cursive; "> &copy; TDD 113</h5>
+        </footer>
+
+</body>
+</html> 
